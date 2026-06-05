@@ -35,7 +35,7 @@ This repo assumes familiarity with the following — because I already have it:
 
 ---
 ## Progress
-- [ ] Installation & Setup
+- [x] Installation & Setup
 - [ ] Routing
 - [ ] Controllers
 - [ ] Blade Templates
