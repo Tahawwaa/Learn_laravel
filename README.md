@@ -34,6 +34,17 @@ This repo assumes familiarity with the following — because I already have it:
 - [Laravel Daily](https://laraveldaily.com)
 
 ---
+## Progress
+- [ ] Installation & Setup
+- [ ] Routing
+- [ ] Controllers
+- [ ] Blade Templates
+- [ ] Eloquent ORM
+- [ ] Authentication
+- [ ] Instagram Clone Project
+
+
+---
 
 ## Author
 
