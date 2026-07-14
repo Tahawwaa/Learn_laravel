@@ -36,7 +36,7 @@ This repo assumes familiarity with the following — because I already have it:
 ---
 ## Progress
 - [x] Installation & Setup
-- [ ] Routing
+- [x] Routing
 - [ ] Controllers
 - [ ] Blade Templates
 - [ ] Eloquent ORM
