@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="topbar">Free shipping on all orders over $150 &nbsp;•&nbsp; Use code <strong>NOIR10</strong> for 10% off</div>
+
 
 
 <div class="breadcrumb">
