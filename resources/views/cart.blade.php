@@ -3,7 +3,7 @@
 
 <div class="breadcrumb">
   <div class="container">
-    <a href="index.html">Home</a><span class="sep">/</span><span class="current">Shopping Cart</span>
+    <a href="{{ route('home')}}">Home</a><span class="sep">/</span><span class="current">Shopping Cart</span>
   </div>
 </div>
 

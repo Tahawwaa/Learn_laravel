@@ -5,7 +5,7 @@
 
 <div class="breadcrumb">
   <div class="container">
-    <a href="index.html">Home</a><span class="sep">/</span><span class="current">Account</span>
+    <a href="{{ route('home')}}">Home</a><span class="sep">/</span><span class="current">Account</span>
   </div>
 </div>
 
