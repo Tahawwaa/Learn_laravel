@@ -40,15 +40,15 @@ function buildProductCard(p) {
       <div class="product-badges">
         ${p.badge ? `<span class="badge ${p.badge === 'Sale' ? 'sale' : ''}">${p.badge}</span>` : ''}
       </div>
-      <a href="product.html?id=${p.id}"><img src="${img}" alt="${p.name}"></a>
+      <a href="/product?id=${p.id}"><img src="${img}" alt="${p.name}"></a>
       <div class="product-quick">
         <button class="qa-add" data-id="${p.id}">Add to Cart</button>
-        <button onclick="location.href='product.html?id=${p.id}'">View</button>
+        <button onclick="location.href='/product?id=${p.id}'">View</button>
       </div>
     </div>
     <div class="product-info">
       <span class="product-cat">${p.category}</span>
-      <h3><a href="product.html?id=${p.id}">${p.name}</a></h3>
+      <h3><a href="/product?id=${p.id}">${p.name}</a></h3>
       <div class="price">${priceHtml}</div>
     </div>
   </div>`;
@@ -225,7 +225,7 @@ function renderCartPage() {
         <div class="cart-product">
           <div class="thumb"><img src="${img}" alt="${p.name}"></div>
           <div>
-            <h4><a href="product.html?id=${p.id}">${p.name}</a></h4>
+            <h4><a href="/product?id=${p.id}">${p.name}</a></h4>
             <div class="variant">Size: ${item.size}</div>
             <button class="remove-btn">Remove</button>
           </div>

@@ -1,27 +1,26 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+//home
+Route::get('/', [App\Http\Controllers\homecontroller::class, 'index'])->name('home');
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+//about
+Route::get('/about', App\Http\Controllers\aboutcontroller::class)->name('about');
 
-Route::get('/shop', function () {
-    return view('shop');
-})->name('shop');
+//shop
+Route::get('/shop', [App\Http\Controllers\shopcontroller::class, 'index'])->name('shop');
 
-Route::get('/about', function () {
-    return view('about');
-})->name('about');
+//contact
+Route::get('/contact', [App\Http\Controllers\contactcontroller::class, 'index'])->name('contact');
+Route::post('/contact', [App\Http\Controllers\contactcontroller::class, 'store']);
 
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
+//product
+Route::get('/product/{slug}', [App\Http\Controllers\productcontroller::class, 'show'])->name('product.show');
+Route::get('/product', [App\Http\Controllers\productcontroller::class, 'index'])->name('product');
 
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
 
-Route::get('/cart', function () {
-    return view('cart');
-})->name('cart');
+//login
+Route::get('/login', [App\Http\Controllers\logincontroller::class, 'index'])->name('login');
+
+//cart
+Route::get('/cart', [App\Http\Controllers\cartcontroller::class, 'index'])->name('cart');
